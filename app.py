@@ -74,10 +74,10 @@ if task == "Classify Images":
 
 # ---------------- STAGE 2: New Training ----------------
 elif task == "New Training":
-    st.title("\ud83d\ude80 Train a New Model on Your Dataset")
+    st.title("Train a New Model on Your Dataset")
 
-    dataset = st.file_uploader("\ud83d\udce6 Upload ZIP of images (with subfolders as class names)", type=["zip"])
-    epochs = st.sidebar.number_input("\ud83d\udd01 Number of Epochs", 1, 100, value=5)
+    dataset = st.file_uploader("Upload ZIP of images (with subfolders as class names)", type=["zip"])
+    epochs = st.sidebar.number_input("Number of Epochs", 1, 100, value=5)
 
     if dataset:
         with st.spinner("Processing and training..."):
