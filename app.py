@@ -46,7 +46,7 @@ task = st.sidebar.radio("📌 Select Task", ["Classify Images", "New Training"])
 def load_classifier(path):
     return load_model(path)
 
-default_model_path = "lov_trained_model_Augmentation.h5"
+default_model_path = "RLAI_LOVAIC_trained_model_1.h5"
 model_path = st.session_state.get('model_path', default_model_path)
 model = load_classifier(model_path)
 
