@@ -37,7 +37,7 @@ st.markdown("""
 logo = Image.open("logo.png")
 st.sidebar.image(logo, width=150)
 st.sidebar.title("RL AI - LOVAIC")
-task = st.sidebar.radio("\ud83d\udccc Select Task", ["Classify Images", "New Training"])
+task = st.sidebar.radio("Select Task", ["Classify Images", "New Training"])
 
 # --- Model Loader with Caching ---
 @st.cache_resource
