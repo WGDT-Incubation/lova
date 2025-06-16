@@ -176,7 +176,7 @@ directory = os.path.join(os.getcwd(), 'saved_models')
 
 if not os.path.isdir(directory):
     os.makedirs(directory)
-model_path = os.path.join(directory, 'keras_cifar10_trained_model.h5')
+model_path = os.path.join(directory, 'RLAI_LOVAIC_trained_model_1.h5')
 cnn_model.save(model_path)
 
 """# STEP #7: IMPROVING THE MODEL WITH DATA AUGMENTATION
@@ -265,7 +265,7 @@ directory = os.path.join(os.getcwd(), 'saved_models')
 
 if not os.path.isdir(directory):
     os.makedirs(directory)
-model_path = os.path.join(directory, 'keras_cifar10_trained_model_Augmentation.h5')
+model_path = os.path.join(directory, 'RLAI_LOVAIC_trained_model_1_Augmentation.h5')
 cnn_model.save(model_path)
 
 """# THANK YOU"""
